@@ -3,8 +3,8 @@
 #include"Tokenaizer.h"
 Tokenaizer::Tokenaizer(char *str1){
     this->pos = 0;
-    this->str = new char[strlen(str1)];
-    this->str2 = new char[strlen(str1)];
+    this->str = new char[strlen(str1)+1];
+    this->str2 = new char[strlen(str1)+1];
     strcpy(this->str,str1);
 }
 void Tokenaizer::initTokenaizer(vector<char> razd1){
